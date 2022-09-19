@@ -9,14 +9,14 @@
 
 import promptSync from 'prompt-sync'
 
+const prompt = promptSync()
+
+const speedOfLight = 2.998 * 10 ** 8
+// input
+const userInput = prompt("Enter object's mass (kg): ")
+
 // The program will halt with a response at improper user inputs
 try {
-  const prompt = promptSync()
-
-  const speedOfLight = 2.998 * 10 ** 8
-  // input
-  const userInput = prompt("Enter object's mass (kg): ")
-
   const matterMass = parseFloat(userInput)
 
   if (isNaN(matterMass)) {
